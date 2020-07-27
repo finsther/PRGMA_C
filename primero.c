@@ -4,5 +4,5 @@
 
 void main()
 {
-    printf("HOLA MUNDO DESDE C\n");
+    printf("HOLA NUEVO MUNDO DESDE C\n");
 }
