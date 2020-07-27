@@ -4,7 +4,5 @@
 
 void main()
 {
-    printf("HOLA MUNDO DESDE C");
-    printf("segunda linea agregada");
-    printf("tercera linea agregada");
+    printf("HOLA MUNDO DESDE C\n");
 }
