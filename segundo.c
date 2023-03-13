@@ -14,16 +14,17 @@ void show_message(void);
 
 void main()
 {
-    int count;
-    count = 0;
-    while (count < 10)
-    {
-        show_message();
-        count = count + 1;
-    }
+  int count = 0;
+
+  while (count < 10)
+  {
+    show_message();
+
+    count = count + 1;
+  }
 }
 
 void show_message(void)
 {
-    printf("hello world\n");
+  printf("hello world\n");
 }

@@ -1,0 +1,9 @@
+{
+    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+    "cmake.cmakePath": "C:\\msys64\\mingw64\\bin\\cmake.exe",
+    "cmake.mingwSearchDirs": [
+      "C:\\msys64\\mingw64\\bin"
+   ],
+   "cmake.generator": "MinGW Makefiles",
+   "sonarlint.pathToCompileCommands": "${workspaceFolder}\\compile_commands.json"
+}
