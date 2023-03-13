@@ -1,8 +1,8 @@
-//primer programa en c
-
 #include <stdio.h>
 
-void main()
+int main()
 {
-    printf("Creando archivos en C para aprender comandos git");
+  printf("Creando archivos en C para aprender comandos git");
+
+  return 0;
 }

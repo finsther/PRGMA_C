@@ -11,60 +11,65 @@
 
 void find_prime_number(void);
 
-int a;
-float b;
-char c;
-double d;
-long e;
-long double f;
-
 int main()
 {
-    find_prime_number();
+  int a;
+  float b;
+  char c;
+  double d;
+  long e;
+  long double f;
 
-    printf("============= C DATATYPES ==============\n");
-    printf("int: %ld\n", sizeof(a));
-    printf("float: %ld\n", sizeof(b));
-    printf("char: %ld\n", sizeof(c));
-    printf("double: %ld\n", sizeof(d));
-    printf("long: %ld\n", sizeof(e));
-    printf("long double: %ld\n", sizeof(f));
+  find_prime_number();
 
-    return EXIT_SUCCESS;
+  printf("============= C DATATYPES ==============\n");
+  printf("int: %ld\n", sizeof(a));
+  printf("float: %ld\n", sizeof(b));
+  printf("char: %ld\n", sizeof(c));
+  printf("double: %ld\n", sizeof(d));
+  printf("long: %ld\n", sizeof(e));
+  printf("long double: %ld\n", sizeof(f));
+
+  return EXIT_SUCCESS;
 }
 
 void find_prime_number(void)
 {
-    printf("This would not be valid but doesn’t have \
-a newline in it as far as the compiler is concerned\n");
+  printf("This would not be valid but doesn’t have \
+  a newline in it as far as the compiler is concerned\n");
 
-    printf("all this"
-           "comess out as"
-           "just one string");
+  printf("all this"
+        "comess out as"
+        "just one string");
 
-    int this_number, divisor, not_prime;
-    this_number = 3;
+  int this_number;
+  int divisor;
+  int not_prime;
 
-    while (this_number < 100)
+  this_number = 3;
+
+  while (this_number < 100)
+  {
+    divisor = this_number / 2;
+    not_prime = 0;
+    while (divisor > 1)
+      {
+        if (this_number % divisor == 0)
+        {
+          not_prime = 1;
+          divisor = 0;
+        }
+        else
+        {
+          divisor = divisor - 1;
+        }
+      }
+
+    if (not_prime == 0)
     {
-        divisor = this_number / 2;
-        not_prime = 0;
-        while (divisor > 1)
-        {
-            if (this_number % divisor == 0)
-            {
-                not_prime = 1;
-                divisor = 0;
-            }
-            else
-            {
-                divisor = divisor - 1;
-            }
-        }
-        if (not_prime == 0)
-        {
-            printf("%d is a prime number\n", this_number);
-        }
-        this_number = this_number + 1;
+      printf("%d is a prime number\n", this_number);
     }
+
+    this_number = this_number + 1;
+  }
 }
